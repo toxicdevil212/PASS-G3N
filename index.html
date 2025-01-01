@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3VIL Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>WELCOME TO D3VIL PASSWORD GENERATOR</h1>
+        </div>
+        <div class="form-container">
+            <form id="passwordForm">
+                <div class="form-group">
+                    <label for="useName">Use Name:</label>
+                    <input type="checkbox" id="useName">
+                    <input type="text" id="firstname" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="useSymbols">Use Symbols:</label>
+                    <input type="checkbox" id="useSymbols">
+                    <input type="text" id="symbols" placeholder="Enter Symbols">
+                </div>
+                <div class="form-group">
+                    <label for="useNumbers">Use Numbers:</label>
+                    <input type="checkbox" id="useNumbers">
+                    <input type="text" id="numbers" placeholder="Enter Numbers (2 or 3 digits)">
+                </div>
+                <div class="form-group">
+                    <label for="amount">Number of Passwords:</label>
+                    <input type="number" id="amount" value="1">
+                </div>
+                <div class="form-group">
+                    <button type="button" id="generateBtn">Generate Passwords</button>
+                    <button type="button" id="resetBtn">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="output-container">
+            <textarea id="generatedPasswords" rows="10" cols="50" readonly></textarea>
+            <div>
+                <button id="downloadBtn" style="display: none;">Download Passwords</button>
+                <button id="copyBtn" style="display: none;">Copy to Clipboard</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
